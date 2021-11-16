@@ -1,0 +1,41 @@
+{
+  "name": "pig-billing",
+  "version": "1.0.0",
+  "description": "养猪计划",
+  "main": "index.js",
+
+  "scripts": {
+    "prebuild": "gulp --gulpfile gulpfile-clear.json",
+    "lint": "tslint -p tsconfig.json",
+    "build": "tsc",
+    "test": "mocha",
+    "test:coverage": "nyc npm test",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwpk110/pig-billing.git"
+  },
+  "author": "lw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lwpk110/pig-billing/issues"
+  },
+  "homepage": "https://github.com/lwpk110/pig-billing#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.7",
+    "@types/sinon": "^10.0.6",
+    "chai": "^4.3.4",
+    "del": "^6.0.0",
+    "gts": "^3.1.0",
+    "gulp": "^4.0.2",
+    "mocha": "^9.1.3",
+    "nyc": "^15.1.0",
+    "sinon": "^12.0.1",
+    "ts-node": "^10.4.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.4.4"
+  }
+}
